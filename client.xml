@@ -11,7 +11,7 @@
                     <name type="string">Handbook</name>			
                     <librarylink type="windowreference">
                         <class>reference_manual</class>
-                        <recordname>reference.referencemanual</recordname>
+                        <recordname>lists.ADNDCoreRefIndex</recordname>
                     </librarylink>				
                 </ref_01>
                 <ref_02>
@@ -119,33 +119,177 @@
 				</column4>
 			</columns>
 		</armor>
-    </lists>
-	
-    <!-- reference -->
-    <reference>
-        <referencemanual>			
+        <ADNDCoreRefIndex>			
             <chapters>				
                 <chapter_01>
-                    <name type="string">Records</name>					
+                    <name type="string">Introduction</name>					
                     <subchapters>					
                         <subchapter_01>
-                            <name type="string">Gear</name>
-                            <refpages>							
-                                <refpage_00>
-                                    <listlink type="windowreference">
-                                        <class>reference_list</class>
-                                        <recordname>..</recordname>
-                                    </listlink>
-                                    <name type="string">Items</name>
-                                    <source type="string">item</source>
-                                    <recordtype type="string">item@Items</recordtype>
+                            <name type="string">The Ruleset Overview</name>
+                            <refpages>
+                                <refpage_00> 
+									<listlink type="windowreference">
+										<class>reference_manualtextwide</class>
+										<recordname>reference.ADnDCoreRef.page_01</recordname>
+									</listlink>
+									<name type="string">Ruleset Design</name>
+									<keywords type="string">xxKeyword xxKeyword</keywords>
                                 </refpage_00> 
+                                <refpage_01> 
+									<listlink type="windowreference">
+										<class>reference_manualtextwide</class>
+										<recordname>reference.ADnDCoreRef.page_01a</recordname>
+									</listlink>
+									<name type="string">Contact</name>
+									<keywords type="string">xxKeyword xxKeyword</keywords>
+                                </refpage_01> 
+                                <refpage_02> 
+									<listlink type="windowreference">
+										<class>reference_manualtextwide</class>
+										<recordname>reference.ADnDCoreRef.page_01b</recordname>
+									</listlink>
+									<name type="string">Legal</name>
+									<keywords type="string">xxKeyword xxKeyword</keywords>
+                                </refpage_02> 
                             </refpages>
                         </subchapter_01>
                     </subchapters>
                 </chapter_01>
+                <chapter_02>
+                    <name type="string">Character Sheet</name>					
+                    <subchapters>					
+                        <subchapter_01>
+                            <name type="string">Overview</name>
+                            <refpages>
+                                <refpage_00> 
+									<listlink type="windowreference">
+										<class>reference_manualtextwide</class>
+										<recordname>reference.ADnDCoreRef.page_02</recordname>
+									</listlink>
+									<name type="string">Overview</name>
+									<keywords type="string">xxKeyword xxKeyword</keywords>
+                                </refpage_00> 
+                            </refpages>
+                        </subchapter_01>
+                        <subchapter_02>
+                            <name type="string">Main</name>
+                            <refpages>
+                                <refpage_00> 
+									<listlink type="windowreference">
+										<class>reference_manualtextwide</class>
+										<recordname>reference.ADnDCoreRef.page_02a</recordname>
+									</listlink>
+									<name type="string">Main</name>
+									<keywords type="string">xxKeyword xxKeyword</keywords>
+                                </refpage_00> 
+                                <refpage_01> 
+									<listlink type="windowreference">
+										<class>reference_manualtextwide</class>
+										<recordname>reference.ADnDCoreRef.page_02b</recordname>
+									</listlink>
+									<name type="string">Ability Scores</name>
+									<keywords type="string">xxKeyword xxKeyword</keywords>
+                                </refpage_01> 
+                                <refpage_02> 
+									<listlink type="windowreference">
+										<class>reference_manualtextwide</class>
+										<recordname>reference.ADnDCoreRef.page_02c</recordname>
+									</listlink>
+									<name type="string">Saves</name>
+									<keywords type="string">xxKeyword xxKeyword</keywords>
+                                </refpage_02> 
+                            </refpages>
+                        </subchapter_02>
+                    </subchapters>					
+                </chapter_02>
             </chapters>
-        </referencemanual>
+        </ADNDCoreRefIndex>
+    </lists>
+	
+    <!-- reference -->
+    <reference>
+		<ADnDCoreRef>
+			<page_01>
+				<name type="string">Ruleset Design</name>
+				<!-- Optional leading/solitary text -->
+				<text type="formattedtext"><b>What is the ruleset for?</b></text>
+				<blocks>
+					<block_01>
+						<blocktype type="string">text</blocktype>
+						<text type="formattedtext"><p>The AD&#38;D Core ruleset is for players of AD&#38;D. Be they 1e or 2e players, or a mix of both. The ruleset design goal is to be compatable with AD&#38;D in general. Because of that some edge cases might not be well handled but the core rules of both should.</p>
+                        <p></p></text>
+					</block_01>
+				</blocks>
+			</page_01>
+			<page_01a>
+				<name type="string">Contact</name>
+				<!-- Optional leading/solitary text -->
+				<text type="formattedtext"><b>Who you can Contact regarding this ruleset.</b></text>
+				<blocks>
+					<block_01>
+						<blocktype type="string">text</blocktype>
+						<text type="formattedtext"><p>If you want to report a bug or make suggestions (or offer to help!) you can reach the folks working on the ruleset using the details here.</p><p>Primary developer, Celestian email: <b>uce_mike@yahoo.com</b> or Discord: <b>Celestian#0854</b></p>
+                        <p></p></text>
+					</block_01>
+				</blocks>
+			</page_01a>
+			<page_01b>
+				<name type="string">Legal</name>
+				<!-- Optional leading/solitary text -->
+				<text type="formattedtext"><b>Legal mumbo jumbo.</b></text>
+				<blocks>
+					<block_01>
+						<blocktype type="string">text</blocktype>
+						<text type="formattedtext"><p>'AD&#38;D' is a trademark of Wizards of the Coast, LLC. The AD&#38;D Core authors are not affiliated with Wizards of the Coast LLC. We make no claim to, or challenge to, such trademarks.</p><p>'Fantasy Grounds' is a trademark of SmiteWorks USA, LLC. 'Fantasy Grounds' is Copyright 2004-2014 SmiteWorks USA LLC.</p>
+                        <p></p></text>
+					</block_01>
+				</blocks>
+			</page_01b>
+			<page_02>
+				<name type="string">Overview</name>
+				<!-- Optional leading/solitary text -->
+				<text type="formattedtext"><b>Character Sheet Overview</b></text>
+				<blocks>
+					<block_01>
+						<blocktype type="string">text</blocktype>
+						<text type="formattedtext"><p>xxText</p></text>
+					</block_01>
+				</blocks>
+			</page_02>
+			<page_02a>
+				<name type="string">Main</name>
+				<!-- Optional leading/solitary text -->
+				<text type="formattedtext"><b>This section covers the main tab, or front page of the character sheet.</b></text>
+				<blocks>
+					<block_01>
+						<blocktype type="string">text</blocktype>
+						<text type="formattedtext"><p>xxText</p></text>
+					</block_01>
+				</blocks>
+			</page_02a>
+			<page_02b>
+				<name type="string">Ability Scores</name>
+				<!-- Optional leading/solitary text -->
+				<text type="formattedtext"><b>This section covers ability scores and how to manage them.</b></text>
+				<blocks>
+					<block_01>
+						<blocktype type="string">text</blocktype>
+						<text type="formattedtext"><p>xxText</p></text>
+					</block_01>
+				</blocks>
+			</page_02b>
+			<page_02c>
+				<name type="string">Saves</name>
+				<!-- Optional leading/solitary text -->
+				<text type="formattedtext"><b>This section covers saving throws and how to manage them.</b></text>
+				<blocks>
+					<block_01>
+						<blocktype type="string">text</blocktype>
+						<text type="formattedtext"><p>xxText</p></text>
+					</block_01>
+				</blocks>
+			</page_02c>
+		</ADnDCoreRef>
     </reference>	
     
 </root>
