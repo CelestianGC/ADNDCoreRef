@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root version="2.0">
+    
+    <!-- library -->
+    <library>		
+        <assettemplates>			
+            <name type="string">AD&#38;D Core Referance Book</name>			
+            <categoryname type="string">AD&#38;D</categoryname>
+            <entries>
+                <ref_01>
+                    <name type="string">Handbook</name>			
+                    <librarylink type="windowreference">
+                        <class>reference_manual</class>
+                        <recordname>reference.referencemanual</recordname>
+                    </librarylink>				
+                </ref_01>
+                <ref_02>
+                    <librarylink type="windowreference">
+                        <class>reference_list</class>
+                        <recordname>..</recordname>
+                    </librarylink>
+                    <name type="string">Items - All</name>
+                    <source type="string">item@Items</source>
+                    <recordtype type="string">item</recordtype>
+                </ref_02>
+                
+                
+                <ref_03>
+                    <librarylink type="windowreference">
+                        <class>reference_list</class>
+                        <recordname>..</recordname>
+                    </librarylink>
+                    <name type="string">Spells - All</name>
+                    <source type="string">spell@2e Spells</source>
+                    <recordtype type="string">spell</recordtype>
+                </ref_03> 
+                <ref_04>
+                    <librarylink type="windowreference">
+                        <class>reference_list</class>
+                        <recordname>..</recordname>
+                    </librarylink>
+                    <name type="string">Spells - Arcane</name>
+                    <source type="string">spell@2e Spells</source>
+                    <recordtype type="string">spell</recordtype>
+                    <filters>
+                        <filter1>
+                            <field type="string">type</field>
+                            <value type="string">Arcane</value>
+                        </filter1>
+                    </filters>
+                </ref_04> 
+                <ref_05>
+                    <librarylink type="windowreference">
+                        <class>reference_list</class>
+                        <recordname>..</recordname>
+                    </librarylink>
+                    <name type="string">Spells - Divine</name>
+                    <source type="string">spell@2e Spells</source>
+                    <recordtype type="string">spell</recordtype>
+                    <filters>
+                        <filter1>
+                            <field type="string">type</field>
+                            <value type="string">Divine</value>
+                        </filter1>
+                    </filters>
+                </ref_05> 
+                <ref_06>
+                    <librarylink type="windowreference">
+                        <class>reference_groupedlist</class>
+                        <recordname>lists.armor</recordname>
+                    </librarylink>
+                    <name type="string">Equipment - Armor</name>
+				</ref_06>                                
+            </entries>
+        </assettemplates>
+    </library>
+    
+    <!-- lists -->
+    <lists>		
+		<armor>
+			<name type="string">Armor</name>
+            <source type="string">item@Items</source>
+			<!-- <recordtype type="string">item@Items</recordtype> -->
+			<filters>
+				<filter1>
+					<field type="string">type</field>
+					<value type="string">Armor</value>
+				</filter1>
+			</filters>
+			<groups>
+				<group1>
+					<field type="string">subtype</field>
+				</group1>
+			</groups>
+			<grouporder type="string">Light|Medium|Heavy|Shield|Extras</grouporder>
+			<columns>
+				<column1>
+					<name type="string">name</name>
+					<heading type="string">Name</heading>
+					<width type="number">200</width>
+				</column1>
+				<column2>
+					<name type="string">cost</name>
+					<heading type="string">Cost</heading>
+					<center />
+				</column2>
+				<column3>
+					<name type="string">ac</name>
+					<heading type="string">AC</heading>
+					<tooltip type="string">Armor Class</tooltip>
+					<type type="string">number</type>
+					<center />
+				</column3>
+				<column4>
+					<name type="string">weight</name>
+					<heading type="string">Weight</heading>
+					<type type="string">number</type>
+					<center />
+				</column4>
+			</columns>
+		</armor>
+    </lists>
+	
+    <!-- reference -->
+    <reference>
+        <referencemanual>			
+            <chapters>				
+                <chapter_01>
+                    <name type="string">Records</name>					
+                    <subchapters>					
+                        <subchapter_01>
+                            <name type="string">Gear</name>
+                            <refpages>							
+                                <refpage_00>
+                                    <listlink type="windowreference">
+                                        <class>reference_list</class>
+                                        <recordname>..</recordname>
+                                    </listlink>
+                                    <name type="string">Items</name>
+                                    <source type="string">item</source>
+                                    <recordtype type="string">item@Items</recordtype>
+                                </refpage_00> 
+                            </refpages>
+                        </subchapter_01>
+                    </subchapters>
+                </chapter_01>
+            </chapters>
+        </referencemanual>
+    </reference>	
+    
+</root>

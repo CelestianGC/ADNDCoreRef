@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+	<name>AD&#38;D Referance Book</name>
+	<category>AD&#38;D</category>
+	<author>Release Version: 1.0</author>
+	<ruleset>AD&amp;D Core</ruleset>
+	<ruleset>CoreRPG</ruleset>
+    <ruleset>5E</ruleset>
+	<ruleset>CoreRPG Orig</ruleset>
+</root>
