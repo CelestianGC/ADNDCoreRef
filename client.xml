@@ -36,33 +36,17 @@
                 </ref_03> 
                 <ref_04>
                     <librarylink type="windowreference">
-                        <class>reference_list</class>
-                        <recordname>..</recordname>
+                        <class>reference_groupedlist</class>
+                        <recordname>lists.spell_arcane</recordname>
                     </librarylink>
                     <name type="string">Spells - Arcane</name>
-                    <source type="string">spell@2e Spells</source>
-                    <recordtype type="string">spell</recordtype>
-                    <filters>
-                        <filter1>
-                            <field type="string">type</field>
-                            <value type="string">Arcane</value>
-                        </filter1>
-                    </filters>
                 </ref_04> 
                 <ref_05>
                     <librarylink type="windowreference">
-                        <class>reference_list</class>
-                        <recordname>..</recordname>
+                        <class>reference_groupedlist</class>
+                        <recordname>lists.spell_divine</recordname>
                     </librarylink>
                     <name type="string">Spells - Divine</name>
-                    <source type="string">spell@2e Spells</source>
-                    <recordtype type="string">spell</recordtype>
-                    <filters>
-                        <filter1>
-                            <field type="string">type</field>
-                            <value type="string">Divine</value>
-                        </filter1>
-                    </filters>
                 </ref_05> 
                 <ref_06>
                     <librarylink type="windowreference">
@@ -77,6 +61,108 @@
     
     <!-- lists -->
     <lists>		
+        <spell_arcane>
+			<name type="string">Arcane Spells</name>
+            <source type="string">spell@2e Spells</source>
+			<filters>
+				<filter1>
+					<field type="string">type</field>
+					<value type="string">Arcane</value>
+				</filter1>
+			</filters>
+			<groups>
+				<group1>
+					<field type="string">school</field>
+				</group1>
+			</groups>
+			<!-- <grouporder type="string">Light|Medium|Heavy|Shield|Extras</grouporder> -->
+			<columns>
+				<column1>
+					<name type="string">name</name>
+					<heading type="string">Name</heading>
+					<width type="number">200</width>
+				</column1>
+				<column2>
+					<name type="string">level</name>
+					<heading type="string">Level</heading>
+					<type type="string">number</type>
+					<center />
+				</column2>
+				<column3>
+					<name type="string">castingtime</name>
+					<heading type="string">Casting Time</heading>
+					<center />
+					<width type="number">80</width>
+				</column3>
+				<column4>
+					<name type="string">range</name>
+					<heading type="string">Range</heading>
+					<width type="number">50</width>
+					<center />
+				</column4>
+				<column5>
+					<name type="string">save</name>
+					<heading type="string">Save</heading>
+					<width type="number">50</width>
+					<center />
+				</column5>
+				<column6>
+					<name type="string">school</name>
+					<heading type="string">School</heading>
+					<width type="number">100</width>
+					<center />
+				</column6>
+			</columns>
+        </spell_arcane>
+        <spell_divine>
+			<name type="string">Divine Spells</name>
+            <source type="string">spell@2e Spells</source>
+			<filters>
+				<filter1>
+					<field type="string">type</field>
+					<value type="string">Divine</value>
+				</filter1>
+			</filters>
+			<groups>
+				<group1>
+					<field type="string">sphere</field>
+				</group1>
+			</groups>
+			<!-- <grouporder type="string">Light|Medium|Heavy|Shield|Extras</grouporder> -->
+			<columns>
+				<column1>
+					<name type="string">name</name>
+					<heading type="string">Name</heading>
+					<width type="number">200</width>
+				</column1>
+				<column2>
+					<name type="string">level</name>
+					<heading type="number">Level</heading>
+					<type type="string">number</type>
+					<center />
+				</column2>
+				<column3>
+					<name type="string">castingtime</name>
+					<heading type="string">Casting Time</heading>
+					<center />
+				</column3>
+				<column4>
+					<name type="string">range</name>
+					<heading type="string">Range</heading>
+					<center />
+				</column4>
+				<column5>
+					<name type="string">save</name>
+					<heading type="string">Save</heading>
+					<center />
+				</column5>
+				<column6>
+					<name type="string">sphere</name>
+					<heading type="string">Sphere</heading>
+					<center />
+				</column6>
+			</columns>
+        </spell_divine>
 		<armor>
 			<name type="string">Armor</name>
             <source type="string">item@Items</source>
