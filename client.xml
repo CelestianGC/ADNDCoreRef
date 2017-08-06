@@ -276,6 +276,16 @@
 						<blocktype type="string">text</blocktype>
 						<text type="formattedtext"><p>xxText</p></text>
 					</block_01>
+                    <block_02>
+                        <blocktype type="string">image</blocktype>								
+                        <align type="string">right,left</align>
+                        <size type="string">350,355</size> 
+                        <image type="image"><bitmap>images/charsheet/main/ability_01.png</bitmap></image>						
+                        <caption type="string">Character Ability Scores</caption>
+                        <text type="formattedtext">					
+                            <p><b>Brief description explaining the view of ability scores and their effects.</b></p>
+                        </text>
+                    </block_02>
 				</blocks>
 			</page_02b>
 			<page_02c>
